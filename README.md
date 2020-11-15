@@ -1,4 +1,4 @@
-[![Written in TypeScript](https://flat.badgen.net/badge/icon/typescript?icon=typescript&label)](http://www.typescriptlang.org/) <!-- [![npm](https://flat.badgen.net/npm/v/@mtti/typescript-base?icon=npm)](https://www.npmjs.com/package/@mtti/typescript-base) --> [![License](https://flat.badgen.net/github/license/mtti/typescript-base)](https://github.com/mtti/typescript-base/blob/master/LICENSE)
+[![Written in TypeScript](https://flat.badgen.net/badge/icon/typescript?icon=typescript&label)](http://www.typescriptlang.org/) <!-- [![npm](https://flat.badgen.net/npm/v/@mtti/http-signature?icon=npm)](https://www.npmjs.com/package/@mtti/http-signature) --> [![License](https://flat.badgen.net/github/license/mtti/http-signature)](https://github.com/mtti/http-signature/blob/master/LICENSE)
 
 This is my personal backend TypeScript base project.
 

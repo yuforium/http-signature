@@ -1,8 +1,8 @@
 {
-  "name": "@mtti/typescript-base",
-  "version": "0.0.0",
-  "description": "TypeScript backend project template",
-  "repository": "github:mtti/typescript-base",
+  "name": "@mtti/http-signature",
+  "version": "0.0.1",
+  "description": "HTTP Signature implementation",
+  "repository": "github:mtti/http-signature",
   "author": "Matti Hiltunen",
   "license": "Apache-2.0",
   "private": true,
