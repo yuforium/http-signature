@@ -14,9 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-export * from './createInput';
-export * from './parse';
-export * from './sign';
-export * from './Signature';
-export * from './stringify';
-export * from './verify';
+export type Signature = {
+  algorithm?: string;
+  created?: number;
+  expires?: number;
+  headers?: readonly string[];
+  keyId: string;
+  signature: string;
+};
