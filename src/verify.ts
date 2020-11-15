@@ -16,12 +16,13 @@ limitations under the License.
 
 import crypto from 'crypto';
 import { createInput } from './createInput';
+import { HeaderDictionary } from './HeaderDictionary';
 import { Signature } from './Signature';
 
 export type VerifyOptions = {
   method?: string;
   requestPath?: string;
-  headerValues?: Record<string, string|string[]>;
+  headerValues?: HeaderDictionary;
   signature: Signature;
   publicKey: crypto.KeyObject;
 };

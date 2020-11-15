@@ -14,13 +14,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+import { HeaderDictionary } from './HeaderDictionary';
+
 export type CreateInputOptions = {
   method?: string;
   requestPath?: string;
   created?: number;
   expires?: number;
   headers?: readonly string[];
-  headerValues?: Record<string, string|string[]>;
+  headerValues?: HeaderDictionary;
 };
 
 const mergeValues = (values: string|string[]): string => {
