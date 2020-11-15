@@ -20,7 +20,14 @@ export type CreateInputOptions = {
   created?: number;
   expires?: number;
   headers?: readonly string[];
-  headerValues?: Record<string, string>;
+  headerValues?: Record<string, string|string[]>;
+};
+
+const mergeValues = (values: string|string[]): string => {
+  if (Array.isArray(values)) {
+    return values.join(', ');
+  }
+  return values;
 };
 
 /** Generates a signature input string */
@@ -62,7 +69,7 @@ export const createInput = (
     if (!value) {
       throw new Error(`Missing header: ${header}`);
     }
-    return `${header}: ${value}`;
+    return `${header}: ${mergeValues(value)}`;
   });
 
   return lines.join('\n');

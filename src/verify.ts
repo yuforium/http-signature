@@ -21,7 +21,7 @@ import { Signature } from './Signature';
 export type VerifyOptions = {
   method?: string;
   requestPath?: string;
-  headerValues?: Record<string, string>;
+  headerValues?: Record<string, string|string[]>;
   signature: Signature;
   publicKey: crypto.KeyObject;
 };

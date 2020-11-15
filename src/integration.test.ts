@@ -42,9 +42,11 @@ describe('integration tests', () => {
         headers: [
           '(created)',
           'host',
+          'x-foo',
         ],
         headerValues: {
           host: 'example.com',
+          'x-foo': ['bar', 'baz'],
         },
       });
       const signatureString = stringify(signatureObject);
@@ -54,6 +56,7 @@ describe('integration tests', () => {
         publicKey,
         headerValues: {
           host: 'example.com',
+          'x-foo': ['bar', 'baz'],
         },
         signature: parsedSignature,
       });
