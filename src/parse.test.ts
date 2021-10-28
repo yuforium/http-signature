@@ -63,7 +63,7 @@ describe('expectInteger', () => {
     beforeEach(() => {
       try {
         result = expectInteger('dummy', '"hello world"');
-      } catch (e) {
+      } catch (e: any) {
         error = e;
       }
     });
