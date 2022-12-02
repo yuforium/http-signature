@@ -1,9 +1,12 @@
 {
-  "name": "@mtti/http-signature",
+  "name": "@yuforium/http-signature",
   "version": "0.0.1",
   "description": "HTTP Signature implementation",
-  "repository": "github:mtti/http-signature",
+  "repository": "github:yuforium/http-signature",
   "author": "Matti Hiltunen",
+  "contributors": [
+    "Chris Moser <cpmoser@gmail.com> (https://yuforia.com/user/chris)"
+  ],
   "license": "Apache-2.0",
   "private": true,
   "engines": {
@@ -13,6 +16,7 @@
   "scripts": {
     "start": "node lib/index.js",
     "build": "tsc -p tsconfig.build.json",
+    "build:watch": "tsc -p tsconfig.build.json --watch",
     "jest": "jest --config ./jest.config.json",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint --fix 'src/**/*.ts'",
